@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script src="./js/index.js" defer></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="search_area">
+      <input id="search" type="text" placeholder="Search by city name...">
+      <button id="search_btn">Search</button>
+    </div>
+    <div class="inner_weather_app">
+      <div class="left">
+        <h2>Your Search Result</h2>
+        <div class="condition_icon">
+          <img id="condition_icon" style="width: 150px;" src="" alt="">
+          <h3 class="city">Tokyo,Japan</h3>
+          <p class="condition">Clear</p>
+          <div class="w_details">
+            Temp: <span id="temp"></span>°C,Pressure: <span id="pressure"></span>, Humidity: <span id="humidity"></span>
+
+          </div>
+
+        </div>
+      </div>
+      <div class=" right">
+        <h2>Recent Search History</h2>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

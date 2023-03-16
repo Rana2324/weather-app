@@ -1,0 +1,42 @@
+@import "./common";
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_area {
+  @include flexCenter();
+
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: #35434f;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 12px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  input[type="text"] {
+    // background-color: #787b85;
+
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+}
+.inner_weather_app {
+  margin-top: 30px;
+  @include flexCenter();
+  .left {
+    background-color: #f7f7f7;
+    width: 50%;
+    height: 80vh;
+    text-align: center;
+    padding: 15px;
+  }
+}
